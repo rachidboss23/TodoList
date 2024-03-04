@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="./style.css">
+<title>To-Do List</title>
+</head>
+
+<body>
+
+<div class="lista">
+
+<h1>To-Do List</h1>
+
+<!-- usuarios pueden escribir nuevas tareas. Se le asigna el identificador "taskInput". -->
+<input type="text" id="taskInput">
+
+<!-- Un botón que, al hacer clic en él, activará la función addTask() para agregar una nueva tarea a la lista-->
+<button onclick="addTask()">Agregar Tarea</button>
+
+<!-- El número se actualiza dinámicamente mediante JavaScript. El elemento span con el id "totalTasks" se utiliza para mostrar el número -->
+<p>Total de tareas: <span id="totalTasks">0</span></p>
+
+<!-- numero de tareas completadas -->
+<p>Tareas realizadas: <span id="completedTasks">0</span></p>
+
+<!-- una lista a la cual se le asigna el identificador "taskList". -->
+<ul id="taskList">
+</ul>
+</div>
+
+<!-- Archivo JavaScript -->
+<script src="script.js"></script>
+</body>
+</html>
